@@ -190,9 +190,6 @@
   color: #f95555;
 }
 
-.container {
-  border: 1px solid red;
-}
 .container .opacity {
   opacity: 1;
 }
