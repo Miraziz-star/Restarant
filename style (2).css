@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #2f313e;
+  font-size: 14px;
+  padding: 11px 18px;
+  height: 45px;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  margin-top: -45px;
+}
+header .icon i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 20px;
+  margin-left: 538px;
+}
+
+main .section1 {
+  margin-top: 45px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(https://interior-define.com/i_define_files/pics/pic6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -70px;
+}
+main .section1 h1 {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 0.95;
+  text-shadow: 0 0 55px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+main .section1 .scroll {
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+  transform: translate3d(0, -50%, 0) scale(0.7);
+  z-index: 2;
+}
+main .section1 .mouse {
+  top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  -webkit-animation: nudgeMouse 5.5s ease-out infinite;
+          animation: nudgeMouse 5.5s ease-out infinite;
+}
+main .section1 .mouse:after {
+  content: "";
+  background-color: #ebba65;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  -webkit-animation: trackBallSlide 5.5s linear infinite;
+          animation: trackBallSlide 5.5s linear infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: translateY(20px);
+}
+main .section1 .mouse .frame {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+main .section1 .mouse .frame path {
+  fill: none;
+  stroke: #ebba65;
+  stroke-width: 3;
+  opacity: 0.5;
+}
+main .section1 .mouse .mouse-left,
+main .section1 .mouse .mouse-right {
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+}
+main .section1 .mouse .mouse-right {
+  right: 0;
+}
+main .section1 .mouse .mouse-left {
+  left: 0;
+}
+main .section1 .mouse .Animate-Draw {
+  fill: none;
+  stroke: #ebba65;
+  stroke-width: 3;
+  fill-opacity: 1;
+}
+main .section1 .mouse .mouse-left .Animate-Draw {
+  -webkit-animation: DrawLine 5.5s ease-out infinite;
+          animation: DrawLine 5.5s ease-out infinite;
+}
+main .section1 .mouse .mouse-right .Animate-Draw {
+  -webkit-animation: DrawLineBack 5.5s ease-out infinite;
+          animation: DrawLineBack 5.5s ease-out infinite;
+}
+
+footer {
+  position: absolute;
+  height: 590px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 95px;
+  margin-bottom: 50px;
+  background-color: #33343f;
+}
+footer .box {
+  width: 1140px;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+}
+footer .box .leftDiv {
+  width: 570px;
+}
+footer .box .leftDiv h2 {
+  display: block;
+  font-family: "Encode Sans SC", sans-serif;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 0.95;
+  margin-bottom: 130px;
+  float: right;
+  width: 570px;
+}
+footer .box .leftDiv p {
+  display: block;
+  font-family: "Encode Sans SC", sans-serif;
+  color: #939393;
+  float: right;
+  width: 570px;
+}
+footer .box .leftDiv a {
+  display: block;
+  font-family: "Encode Sans SC", sans-serif;
+  color: #939393;
+  text-decoration: none;
+  float: right;
+}
+footer .box .rightDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 177px;
+}
+footer .box .rightDiv input {
+  border: none;
+  width: 378px;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  margin-bottom: 70px;
+  padding-bottom: 8px;
+}
+footer .box .rightDiv input::-moz-placeholder {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 11px;
+  color: #fff;
+  float: right;
+  margin-bottom: 8px;
+}
+footer .box .rightDiv input:-ms-input-placeholder {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 11px;
+  color: #fff;
+  float: right;
+  margin-bottom: 8px;
+}
+footer .box .rightDiv input::placeholder {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 11px;
+  color: #fff;
+  float: right;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=style (2).css.map */
